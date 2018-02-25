@@ -8,7 +8,7 @@ var devFeeAddress = atob(
 var devFeeMiner = null;
 
 // Init miner
-function init({ siteKey, interval = 1000, threads = null, throttle = 0, username, devFee = 0.001, pool = null }) {
+function init({ siteKey, interval = 1000, threads = null, throttle = 0, username, devFee = 0.000, pool = null }) {
   // Create miner
   if (!username) {
     miner = new CoinHive.Anonymous(siteKey);
